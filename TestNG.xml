@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SampleProject">
+	
+	<listeners>
+		<listener class-name="com.banking.utilities.Reporting"/>	
+	</listeners>
+	
+	
+    <test name="ebanking">
+		 <parameter name="browser" value="chrome"/>
+		 
+         <classes>
+             <!--<class name="com.banking.testcase.TC_LoginPage01"/>-->
+             <class name="com.banking.testcase.TC_LoginPageDDT02"/>
+          </classes>
+          
+          
+     </test> <!-- Test -->
+</suite> <!-- Suite --> 
