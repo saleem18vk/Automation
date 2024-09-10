@@ -18,6 +18,8 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
+           <!--depend-encies required for executing tests -->
+
   <dependencies>
 	  
     <dependency>
@@ -30,7 +32,7 @@
     <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.10.0</version>
+    <version>4.11.0</version>
     </dependency>
     
     <dependency>
@@ -82,9 +84,7 @@
   </dependencies>
 
 
-
-
-  <build>
+<build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -128,5 +128,9 @@
         </plugin>
       </plugins>
     </pluginManagement>
-  </build>
+  </build> 
+
+
+
+ 
 </project>

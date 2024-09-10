@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
@@ -33,9 +34,10 @@ public class BaseClass {
 //	public String baseURL="https://demo.guru99.com/V1/index.php";
 //	public String username="mngr526039";
 //	public String password="dYvypag";
-//	
-	public static WebDriver driver;
+
 	
+	
+	public static WebDriver driver;
 	public static Logger logger;
 	
 	
@@ -50,7 +52,8 @@ public class BaseClass {
 		if(brw.equals("chrome"))
 		{
 
-			System.setProperty("webdriver.chrome.driver","D:\\Automation\\SampleProject\\Drivers\\chromedriver.exe");
+		//	System.setProperty("webdriver.chrome.driver","D:\\Automation\\SampleProject\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","D:\\Automation\\SampleProject\\SampleProject\\Drivers\\chromedriver.exe");
 
 			//  System.setProperty("webdriver.chrome.driver",readconfig.getChromepath());
 
@@ -83,8 +86,26 @@ public class BaseClass {
 		File target= new File(System.getProperty("user.dir")+"/Screenshots/"+ test_name+".png");
 		FileUtils.copyFile(source, target);
 		System.out.println("ScreenShot Taken");
-		
-		
+
+	}
+	
+	//Generate random String
+	public String randomstring()
+	{
+		String generatedstring=RandomStringUtils.randomAlphabetic(5);
+		return (generatedstring);
+	}
+	public String randomstring1()
+	{
+		String generatedstring1=RandomStringUtils.randomAlphabetic(9);
+		return (generatedstring1);
+	}
+	
+	//Generate random number
+	public String randomnum()
+	{
+		String generatedstring2=RandomStringUtils.randomNumeric(9);
+		return (generatedstring2);
 	}
 
 }

@@ -12,8 +12,10 @@
 		 <parameter name="browser" value="chrome"/>
 		 
          <classes>
-             <!--<class name="com.banking.testcase.TC_LoginPage01"/>-->
-             <class name="com.banking.testcase.TC_LoginPageDDT02"/>
+          <!--    <class name="com.banking.testcase.TC_LoginPage01"/>
+            <class name="com.banking.testcase.TC_LoginPageDDT02"/>-->
+             
+              <class name="com.banking.testcase.HRM_Login_TC"/>
           </classes>
           
           
